@@ -1,0 +1,60 @@
+.navbar {
+    z-index         : 9999999999999;
+    background-color: white;
+}
+
+.text-gradient {
+    background             : -webkit-linear-gradient(315deg, #100F21, #589FB5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size      : 1.5rem;
+    padding        : 5px 20px;
+}
+
+.nav-link:focus {
+    color: #f8830e !important;
+}
+
+.first-Letter {
+    color: #100F21;
+}
+
+.Download-CV button {
+    border    : solid 2px #589FB5;
+    color     : #3e6a77;
+    background: transparent;
+    ;
+}
+
+.Download-CV button:hover {
+    background: #589FB5;
+    color     : white;
+    transition: .6s;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content         : "";
+    width           : 0px;
+    height          : 2px;
+    background-color: #3e6a77;
+    position        : absolute;
+    top             : 80%;
+    left            : 20px;
+    transition      : .8s;
+}
+
+.nav-link:hover::after {
+    width: 65%;
+}
+
+.nav-link:focus::after {
+    width: 65%;
+}

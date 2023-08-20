@@ -1,0 +1,311 @@
+.skill {
+    width   : 100px;
+    height  : 100px;
+    position: relative;
+}
+
+.outer {
+    width        : 160px;
+    height       : 160px;
+    border-radius: 50%;
+    padding      : 19px;
+    box-shadow   : 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.inner {
+    width          : 120px;
+    height         : 120px;
+    border-radius  : 50%;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    box-shadow     : inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+        inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+        -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+        0.5px 0.5px 0px rgba(0, 0, 0, 0.05),
+        0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+
+.numberskill {
+    padding-left: 12px;
+    font-weight : 600;
+    color       : rgb(46, 44, 44);
+}
+
+.outer h5 {
+    color: rgb(46, 44, 44);
+}
+
+.circlesvg1 {
+    fill             : none;
+    stroke           : url(#GradientColor);
+    stroke-width     : 19px;
+    stroke-dasharray : 437px;
+    stroke-dashoffset: 437;
+    animation        : anim1 2s linear forwards;
+}
+
+.circlesvg2 {
+    fill             : none;
+    stroke           : url(#GradientColor);
+    stroke-width     : 19px;
+    stroke-dasharray : 437px;
+    stroke-dashoffset: 437;
+    animation        : anim2 2s linear forwards;
+}
+
+.circlesvg3 {
+    fill             : none;
+    stroke           : url(#GradientColor);
+    stroke-width     : 19px;
+    stroke-dasharray : 437px;
+    stroke-dashoffset: 437;
+    animation        : anim3 2s linear forwards;
+}
+
+.circlesvg4 {
+    fill             : none;
+    stroke           : url(#GradientColor);
+    stroke-width     : 19px;
+    stroke-dasharray : 437px;
+    stroke-dashoffset: 437;
+    animation        : anim4 2s linear forwards;
+}
+
+@keyframes anim1 {
+    100% {
+        stroke-dashoffset: 218.5;
+    }
+}
+
+@keyframes anim2 {
+    100% {
+        stroke-dashoffset: 109.25;
+    }
+}
+
+@keyframes anim3 {
+    100% {
+        stroke-dashoffset: 131.1;
+    }
+}
+
+@keyframes anim4 {
+    100% {
+        stroke-dashoffset: 174.8;
+    }
+}
+
+.svgAboutMe {
+    position: absolute;
+    top     : -1px;
+    left    : 12px;
+}
+
+
+.cantainerSection {
+    min-height: 90vh;
+    background: linear-gradient(357deg, rgba(255, 255, 255, 1) 10%, rgba(88, 159, 181, 1) 69%, rgba(16, 15, 33, 1) 150%);
+    padding   : 12%;
+}
+
+
+.cantainerSection2 {
+    padding       : 12%;
+    background    : white;
+    padding-top   : 8%;
+    padding-bottom: 2%;
+}
+
+
+.heading {
+    text-align               : center;
+    text-decoration-thickness: 5px;
+    margin-bottom            : 50px;
+}
+
+.horizontal-bars .bar {
+    padding: 15px 0px;
+}
+
+.horizontal-bars .bar:first-child {
+    margin-top: 0;
+}
+
+.horizontal-bars .bar:last-child {
+    margin-bottom: 0;
+}
+
+.horizontal-bars .bar .info {
+    margin-bottom: 5px;
+}
+
+.horizontal-bars .bar .info span {
+    font-size  : 17px;
+    font-weight: 500;
+    animation  : showText 0.5s 1s linear forwards;
+    opacity    : 0;
+}
+
+.horizontal-bars .bar .progress-line {
+    position        : relative;
+    border-radius   : 10px;
+    width           : 100%;
+    height          : 5px;
+    background-color: #000;
+    animation       : animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    transform       : scaleX(0);
+    transform-origin: left;
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.horizontal-bars .bar .progress-line span {
+    height    : 100%;
+    background: linear-gradient(22deg, rgba(103, 58, 183, 1) 0%, rgba(212, 35, 113, 1) 84%);
+
+    position        : absolute;
+    border-radius   : 10px;
+    animation       : animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    transform       : scaleX(0);
+    transform-origin: left;
+}
+
+.progress-line.html span {
+    width: 90%;
+}
+
+.progress-line.css span {
+    width: 80%;
+}
+
+.progress-line.jquery span {
+    width: 85%;
+}
+
+.progress-line.React span {
+    width: 70%;
+}
+
+.progress-line.JS span {
+    width: 75%;
+}
+
+.progress-line span::after {
+    position        : absolute;
+    padding         : 1px 8px;
+    background-color: #000;
+    color           : #fff;
+    font-size       : 12px;
+    border-radius   : 3px;
+    top             : -28px;
+    right           : -20px;
+    animation       : showText 0.5s 1.5s linear forwards;
+    opacity         : 0;
+}
+
+.progress-line.html span::after {
+    content: "90%";
+}
+
+.progress-line.css span::after {
+    content: "80%";
+}
+
+.progress-line.jquery span::after {
+    content: "85%";
+}
+
+.progress-line.React span::after {
+    content: "70%";
+}
+
+.progress-line.JS span::after {
+    content: "75%";
+}
+
+.progress-line span::before {
+    content            : "";
+    position           : absolute;
+    width              : 0;
+    height             : 0;
+    border             : 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width : 0px;
+    border-top-color   : #000;
+    top                : -10px;
+    right              : 0;
+    animation          : showText 0.5s 1.5s linear forwards;
+    opacity            : 0;
+}
+
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+
+.radial-bars {
+    width          : 100%;
+    margin-top     : 90px;
+    margin-left    : 60px;
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: space-between;
+}
+
+.Education-card {
+    background: linear-gradient(357deg, rgba(255, 255, 255, 1) 10%, rgba(88, 159, 181, 1) 69%, rgba(16, 15, 33, 1) 150%);
+}
+
+@media (max-width: 820px) {
+
+    /* CSS rules here will be applied only on screens with a maximum width of 820px */
+    .skill {
+        margin  : 0;
+        padding : 0;
+        width   : 100px;
+        height  : 100px;
+        position: relative;
+        left    : 45px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    /* CSS rules here will be applied only on screens with a maximum width of 700px */
+    .cantainerSection {
+        margin-top: 60px;
+    }
+}
+
+
+@media (max-width: 541px) {
+
+    /* CSS rules here will be applied only on screens with a maximum width of 541px */
+    .skill {
+        margin  : 0;
+        padding : 0;
+        width   : 100px;
+        height  : 100px;
+        position: relative;
+        left    : -10px;
+    }
+}
+
+@media (max-width: 415px) {
+
+    /* CSS rules here will be applied only on screens with a maximum width of 415px */
+    .skill {
+        margin  : 0;
+        padding : 0;
+        width   : 100px;
+        height  : 100px;
+        position: relative;
+        left    : -35px;
+    }
+}

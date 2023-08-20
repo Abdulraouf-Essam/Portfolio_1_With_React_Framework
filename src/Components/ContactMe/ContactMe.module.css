@@ -1,0 +1,22 @@
+.feature {
+    display        : inline-flex;
+    align-items    : center;
+    justify-content: center;
+    height         : 3rem;
+    width          : 3rem;
+    font-size      : 1.5rem;
+}
+
+.bg-gradient-primary-to-secondary {
+    background: linear-gradient(90deg, #589FB5, #100F21);
+}
+
+.bg-cont {
+    background: linear-gradient(22deg, rgba(16, 15, 33, 1) 0%, rgba(88, 159, 181, 1) 84%);
+}
+
+.lead {
+    font-size  : 1.25rem;
+    font-weight: 300;
+    color      : rgb(218, 216, 216);
+}

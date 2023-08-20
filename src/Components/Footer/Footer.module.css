@@ -1,0 +1,67 @@
+.footer {
+    background    : linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(88, 159, 181, 1) 69%, rgba(16, 15, 33, 1) 150%);
+    width         : 100%;
+    padding-bottom: 20px;
+    text-align    : center;
+}
+
+.horizental-line {
+    width : 75%;
+    margin: 40px auto;
+}
+
+.footer-content h3 {
+    font-size     : 3rem;
+    font-weight   : 400;
+    text-transform: capitalize;
+    padding-top   : 0px;
+    padding-bottom: 50px;
+}
+
+.footer-content p {
+    max-width  : 500px;
+    margin     : 15px auto;
+    line-height: 28px;
+    font-size  : 14px;
+}
+
+.socials {
+    list-style     : none;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    margin         : 1rem 0px 3rem 0px;
+}
+
+.socials li {
+    margin: 0px 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color          : black;
+}
+
+.socials a i {
+    font-size : 1.6rem;
+    padding   : 0px 5px;
+    transition: 0.4s;
+}
+
+.socials a:hover i {
+    color: gold;
+}
+
+.footer-bottom {
+    color: white;
+}
+
+.footer-bottom p {
+    font-size   : 18px;
+    word-spacing: 2px;
+}
+
+.footer-bottom p span {
+    font-weight: 500;
+    font-size  : 18px;
+}
